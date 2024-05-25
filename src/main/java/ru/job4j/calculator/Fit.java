@@ -1,7 +1,6 @@
 package ru.job4j.calculator;
 
 public class Fit {
-
     public static double manWeight(short height) {
         double result = (height - 100) * 1.15;
         return result;

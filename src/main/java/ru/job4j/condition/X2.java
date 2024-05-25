@@ -1,8 +1,7 @@
 package ru.job4j.condition;
 
 public class X2 {
-
-    public static int calc(int a, int b, int c, int x) {
+    public static int calculate(int a, int b, int c, int x) {
         return a * x  * x + b * x + c;
     }
 
@@ -11,7 +10,7 @@ public class X2 {
         int b = 1;
         int c = 1;
         int x = 0;
-        int result = X2.calc(a, b, c, x);
+        int result = X2.calculate(a, b, c, x);
         System.out.println(result);
     }
 }
