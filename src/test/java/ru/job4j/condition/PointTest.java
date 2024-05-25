@@ -41,4 +41,31 @@ class PointTest {
         double output = a.distance(b);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void when000To235Then3Dot60() {
+        Point a = new Point(0, 0, 0);
+        Point b = new Point(2, 3, 5);
+        double expected = 3.60;
+        double output = a.distance(b);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
+
+    @Test
+    void whenMinus2Minus5Minus9To999Then17Dot80() {
+        Point a = new Point(-2, -5, -9);
+        Point b = new Point(9, 9, 9);
+        double expected = 17.80;
+        double output = a.distance(b);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
+
+    @Test
+    void when789ToMinus2Minus3Minus4Then14Dot21() {
+        Point a = new Point(7, 8, 9);
+        Point b = new Point(-2, -3, -4);
+        double expected = 14.21;
+        double output = a.distance(b);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
 }
